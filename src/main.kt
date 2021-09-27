@@ -12,6 +12,7 @@ fun main() {
         {
             "b1" -> Begin1()
             "b2" -> Begin2()
+            "b3" -> Begin3()
             else -> print("Такой задачи нет!")
         }
         print("\n\nПродолжить?[y/n] ")
@@ -41,4 +42,8 @@ fun Begin1() {
 fun Begin2()
 {
     print("Hello World!")
+}
+fun Begin3()
+{
+    print("All is OK!")
 }
