@@ -40,5 +40,5 @@ fun Begin1() {
 }
 fun Begin2()
 {
-
+    print("Hello World!")
 }
