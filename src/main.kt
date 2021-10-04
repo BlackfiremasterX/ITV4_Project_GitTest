@@ -131,7 +131,6 @@ fun if5() {
     print("Введите третье число: ")
     var num3 = readLine()!!.toInt()
     var counter_positive = 0
-
     if(num1 > 0)
         counter_positive++ //натуральный итератор - инкремент  +1  // counter_positive-- - декремент -1
     if(num2 > 0)
