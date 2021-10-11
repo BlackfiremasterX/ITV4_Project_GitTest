@@ -2,6 +2,10 @@ import java.util.*
 import kotlin.math.sqrt
 
 fun main() {
+    String_Test()
+}
+
+fun Task_Operator() {
 
     Info()
     var user_answer = ""
@@ -52,6 +56,7 @@ fun main() {
         }
     }
 }
+
 fun Info() {
 
     var timing = 200
@@ -70,6 +75,7 @@ fun Info() {
     print("После ввода ответа нужно нажать клавишу Enter!")
     Thread.sleep(timing.toLong())
 }
+
 fun Begin1() {
 
     println("\n\nBegin1. Дана сторона квадрата a. Найти его периметр P = 4*a")
@@ -79,6 +85,7 @@ fun Begin1() {
     print("Периметр квадрата со стороной а = $a: $P")
 
 }
+
 fun Begin4() {
 
     println(
@@ -92,6 +99,7 @@ fun Begin4() {
 
 
 }
+
 fun Begin7() {
     println(
         "Найти длину окружности L и площадь круга S заданного радиуса R:\n" +
@@ -107,6 +115,7 @@ fun Begin7() {
     println("S = $s")
 
 }
+
 fun Begin9() {
 
     println(
@@ -121,9 +130,12 @@ fun Begin9() {
     println("Корень квадратный из $b = $SQRT")
 
 }
+
 fun if5() {
-    print("If5.Даны три целых числа.\n" +
-            "Найти количество положительных и количество отрицательных чисел.\n")
+    print(
+        "If5.Даны три целых числа.\n" +
+                "Найти количество положительных и количество отрицательных чисел.\n"
+    )
     print("Введите первое число: ")
     var num1 = readLine()!!.toInt()
     print("Введите второе число: ")
@@ -131,17 +143,33 @@ fun if5() {
     print("Введите третье число: ")
     var num3 = readLine()!!.toInt()
     var counter_positive = 0
-    if(num1 > 0)
+    if (num1 > 0)
         counter_positive++ //натуральный итератор - инкремент  +1  // counter_positive-- - декремент -1
-    if(num2 > 0)
+    if (num2 > 0)
         counter_positive++
-    if(num3 > 0)
+    if (num3 > 0)
         counter_positive++
     print("Количество положительных чисел: $counter_positive/3") //    -5 -4 -3 -2 -1 0 +1 +2 +3 +4 +5
 }
+
 fun if6() {
 }
+
 fun if7() {
 }
+
 fun if8() {
+}
+
+
+fun String_Test() {
+    var string = "qwerty"
+  if(string.length>100)
+  {
+      print("В строке больше 100 символов...")}
+}
+
+fun Randomize() {
+
+
 }
