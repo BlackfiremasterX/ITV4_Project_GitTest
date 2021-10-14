@@ -2,7 +2,7 @@ import java.util.*
 import kotlin.math.sqrt
 
 fun main() {
-    String_Test()
+    For2()
 }
 
 fun Task_Operator() {
@@ -176,5 +176,49 @@ fun String_Test() {
 
 fun Randomize() {
 
+
+}
+
+fun For1()
+{
+    println("For1. Даны целые числа K и N (N > 0). Вывести N раз число K.")
+    print("Введите любое число: ")
+    var K = readLine()!!.toDouble()
+    print("Введите количество выводов: ")
+    var N = readLine()!!.toInt()
+
+    for (i in 1..N)
+    {
+        print("$K ")
+    }
+}
+fun For2()
+{
+    println("For2. Даны два целых числа begin и end (begin < end). Вывести в порядке возрастания все\n" +
+            "целые числа, расположенные между begin и end (включая сами числа), а\n" +
+            "также количество quantity этих чисел.\n")
+    print("Введите начальное число: ")
+    var begin = readLine()!!.toInt()
+    print("Введите конечное число: ")
+    var end = readLine()!!.toInt()
+    var quantity = 0
+    if (begin<end)
+    {
+        for (i in begin..end)
+        {
+            print("$i ")
+            quantity++
+        }
+    }
+    else
+    {
+        for (i in begin downTo end)
+        {
+            print("$i ")
+            quantity++
+        }
+    }
+
+    println("\nКоличество чисел: $quantity")
 
 }
