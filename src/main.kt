@@ -2,7 +2,7 @@ import java.util.*
 import kotlin.math.sqrt
 
 fun main() {
-    String_Test()
+    Sport_Game()
 }
 
 fun Task_Operator() {
@@ -163,18 +163,69 @@ fun if8() {
 
 
 fun String_Test() {
-    print("Условие задачи: Сделать анализатор строки с помощью if, выводящий какая строчка." +
-            "Если меньше 10 символов - короткая." +
-            "Если от 10 до 20 - средняя" +
-            "Если больше 30 - большая" +
-            "Ввод сделать с помощью readLine()")
-    var string = "qwerty"
-  if(string.length>100)
-  {
-      print("В строке больше 100 символов...")}
+    println(
+        "Условие задачи: Сделать анализатор строки с помощью if, выводящий какая строчка." +
+                "Если меньше 10 символов - короткая." +
+                "Если от 10 до 20 - средняя" +
+                "Если больше 20 - большая" +
+                "Ввод сделать с помощью readLine()"
+    )
+    print("Введите строку: ")
+    var string = readLine().toString()
+
+    if (string.length < 10) {
+        print("Короткая")
+    }
+    if (string.length in 10..20) {
+        print("Средняя")
+    }
+    if (string.length > 20) {
+        print("Длинная")
+    }
 }
 
 fun Randomize() {
 
-
+    var a = (1..40).random()
+    print("Нам выпало число: $a\n")
+    if(a in 1..10)
+    {
+        print("Вы пошли на СЕВЕР")
+    }
+    if(a in 11..20)
+    {
+        print("Вы пошли на ЮГ")
+    }
+    if(a in 21..30)
+    {
+        print("Вы пошли на ВОСТОК")
+    }
+    if(a in 31..40)
+    {
+        print("Вы пошли на ЗАПАД")
+    }
 }
+
+fun Sport_Game()
+{
+    var name = arrayOf(
+        "Михаил",
+        "Маргарита",
+        "Роман",
+        "Виктор",
+        "Ярослав",
+        "Сергей",
+        "Кирилл",
+        "Никита",
+    )
+
+    var quantity = (1..30).random()
+
+
+    for (i in 1..3)
+    {
+        quantity = (1..30).random()
+        println("${name.random()} делает $quantity раз...")
+    }
+}
+
